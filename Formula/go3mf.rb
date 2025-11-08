@@ -5,13 +5,13 @@
 class Go3mf < Formula
   desc "Command-line tool for consuming Kafka topics"
   homepage "https://github.com/philipparndt/go3mf"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/philipparndt/go3mf/releases/download/v0.5.0/go3mf_darwin_x86_64.tar.gz"
-      sha256 "9128007b22c3d6af29df29317edf879c646387901c0e6b0b0f1fda6dc854be22"
+      url "https://github.com/philipparndt/go3mf/releases/download/v0.6.0/go3mf_darwin_x86_64.tar.gz"
+      sha256 "ef227f6c70c16f763ec29005f0bbbb8de27e774380ecf59e4aaf53db864ef912"
 
       def install
         bin.install "go3mf"
@@ -39,8 +39,8 @@ class Go3mf < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/philipparndt/go3mf/releases/download/v0.5.0/go3mf_darwin_arm64.tar.gz"
-      sha256 "9c48e29ca2fe9541e172fb2938bcb18da652837a642ea68c92a63882882c1c1e"
+      url "https://github.com/philipparndt/go3mf/releases/download/v0.6.0/go3mf_darwin_arm64.tar.gz"
+      sha256 "db2c133fe6b33adc42bdf6371a2c856609495c6a044af2a5451fe5de7fa31ae9"
 
       def install
         bin.install "go3mf"
@@ -71,8 +71,8 @@ class Go3mf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/go3mf/releases/download/v0.5.0/go3mf_linux_x86_64.tar.gz"
-      sha256 "d0807c4e0cc606584404cc9124e781220e7b0dcb8936f46ee25515bf41549086"
+      url "https://github.com/philipparndt/go3mf/releases/download/v0.6.0/go3mf_linux_x86_64.tar.gz"
+      sha256 "1505d36a7228b522b80759dcd2f5fbed891e99099ea24d58002029080f8908b4"
       def install
         bin.install "go3mf"
 
@@ -99,8 +99,8 @@ class Go3mf < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/go3mf/releases/download/v0.5.0/go3mf_linux_arm64.tar.gz"
-      sha256 "f67b93bc8517ebc073f385b070c9551c9bbe5e897500e8a23689c77b4cefc5d7"
+      url "https://github.com/philipparndt/go3mf/releases/download/v0.6.0/go3mf_linux_arm64.tar.gz"
+      sha256 "9b19d4bf0b6e312b832bff035110338e03ebaf936b6e1a807316e9b9df9b6a76"
       def install
         bin.install "go3mf"
 
