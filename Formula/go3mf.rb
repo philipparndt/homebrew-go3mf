@@ -5,13 +5,13 @@
 class Go3mf < Formula
   desc "3D model file combiner and SCAD renderer"
   homepage "https://github.com/philipparndt/go3mf"
-  version "0.8.1"
+  version "0.8.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/philipparndt/go3mf/releases/download/v0.8.1/go3mf_darwin_x86_64.tar.gz"
-      sha256 "0f7a5e8fc0bf8166aa70613ebc80dee49e07ab7bf1baa16dfd30debd3e6c9fe8"
+      url "https://github.com/philipparndt/go3mf/releases/download/v0.8.3/go3mf_darwin_x86_64.tar.gz"
+      sha256 "c32e3f9f9235ba4d4181e2895c1f90c6a7101cd070c3faaa9834f237d06de1a1"
 
       def install
         bin.install "go3mf"
@@ -21,8 +21,8 @@ class Go3mf < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/philipparndt/go3mf/releases/download/v0.8.1/go3mf_darwin_arm64.tar.gz"
-      sha256 "b2dc193070386deaf34ca77b4dc309a9e75cd57ece308c62b49fade2ae322a3c"
+      url "https://github.com/philipparndt/go3mf/releases/download/v0.8.3/go3mf_darwin_arm64.tar.gz"
+      sha256 "ddb5ada9e45300ac7b254e70425bf63e601aec213568b2f524d28e9e0fe07ce0"
 
       def install
         bin.install "go3mf"
@@ -35,8 +35,8 @@ class Go3mf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/go3mf/releases/download/v0.8.1/go3mf_linux_x86_64.tar.gz"
-      sha256 "8785c456e756e623ba47216e336cae8394cebae22ed15f38809726245b77383c"
+      url "https://github.com/philipparndt/go3mf/releases/download/v0.8.3/go3mf_linux_x86_64.tar.gz"
+      sha256 "3e9ed09aef786278b659458cb2eebfe471f410c9915527b92e6c270d5594d926"
       def install
         bin.install "go3mf"
         bash_completion.install "completions/go3mf.bash" => "go3mf"
@@ -45,8 +45,8 @@ class Go3mf < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/go3mf/releases/download/v0.8.1/go3mf_linux_arm64.tar.gz"
-      sha256 "cf852a0674cb4070ec17c7dbdc7407c4949980972c6d1a4e42afa251632a1489"
+      url "https://github.com/philipparndt/go3mf/releases/download/v0.8.3/go3mf_linux_arm64.tar.gz"
+      sha256 "21ef21b975a737b49d72b6dd729ab278c0d61d2ec5591ed8a023ff88efd9e1fb"
       def install
         bin.install "go3mf"
         bash_completion.install "completions/go3mf.bash" => "go3mf"
